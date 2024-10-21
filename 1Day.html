@@ -1,0 +1,170 @@
+
+<!--
+Id vs Class
+============================
+id should be unique.
+Ex.(Wrong)
+<p id="my_id"> Paragraph 1 </p>
+<p id="my_id"> Paragraph 2 </p>
+
+(Correct)
+<p id="id1"> Para 1 </p>
+<p id="id2"> Para 2 </p>
+we can use same class to multiple elements
+(Correct)
+<p id="class_1"> Para 1 </p>
+<p id="class_2"> Para 2 </p>
+ Note:"Id" attribute more priority compared to "class Attribute"
+ -----------------------------------------------------
+ 
+
+-->
+
+<!--
+<!DOCTYPE>
+<html>
+  <head>
+   <style>
+    p.class_one{
+      color:red;
+    }
+    h.class_one{
+      color:blue;
+    }
+    p.class_two{
+      background: green;
+    }
+   </style>
+  </head>
+  <body>
+      <h class="class_one">Missing very Much</h>
+      <br>
+      <h>I am Alone</h>
+      <p class="class_one class_two">Hello</p>
+      <p>Bye</p>
+      <p>Sorry</p>
+      <p>Missing </p>
+  </body>
+</html>
+-->
+
+<!--
+<!DOCTYPE>
+<html>
+  <head>
+    <style>
+      ol>li:first-child{
+        color:blue;
+      }
+      ol>li:last-child{
+        color:red;
+      }
+      ol>li:nth-child(odd){
+        color:blueviolet;
+      }
+      ol>li:nth-child(2){
+         color:black;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>Angular</li>
+      <li>React js</li>
+      <li>Node js</li>
+      <li>MongoDb</li>
+    </ol>
+  </body>
+</html>
+-->
+
+
+
+<!--
+<!DOCTYPE>
+<html>
+  <head>
+   <style>
+    div>p{
+      color:red;
+    }
+    div>span{
+      color:green;
+    }
+   </style>
+  </head>
+  <body>
+    <div>
+      <p>Hello</p>
+      <p>Bye</p>
+      <p>Sorry</p>
+      <p>Missing </p>
+      <span>span-1</span>
+      <br><br>
+      <span>span-2</span>
+    </div>
+    <span>Span</span>
+  </body>
+</html>
+-->
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+ h1#my_id{
+    color:blue;
+    background: yellow;
+  }
+  p#my_id{
+   color:red;
+   background:pink;
+  }
+</style>
+  </head>
+  <body>
+    <h1 id="my_id">Baby Come</h1>
+    <h1 id="my_id">Baby Not Coming</h1>
+    <p id="my_id">Hello</p>
+    <p id="my_id">Html</p>
+    <p id="my_id">CSS</p>
+    <p id="my_id">JavaScript</p>
+    <p id="my_id">SpringBoot</p>
+  </body>
+</html>
+-->
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Css Selectors</title>
+    <style>
+      p{
+        color:red;
+      }
+      #my_paragraph{
+        color:green;
+      }
+      .my_class{
+        color:blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>My name is Sunil</p>
+    <p id="my_paragraph">Current I am in Hyderabad</p>
+    <p class="my_class">Software Training</p>
+  </body>
+</html>
+-->

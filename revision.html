@@ -1,0 +1,75 @@
+<!--
+  css
+  ****
+  css stand for cascading style sheet.
+  css used to apply the styles to the webpages.
+
+  Ex.
+  color
+  background color
+  margins
+  paddings
+
+  ---------
+  ----------
+  -------
+  -------
+  currently version of css is css 3.X
+
+
+  we can apply CSS in 3 ways.
+  1) style attribute
+  <p style="color:red"></p> inline css
+
+
+  //Internal css
+  <head>
+  <style>
+    p {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <p>This text is red</p>
+</body>
+
+External css
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <p>This text is red</p>
+</body>
+
+p {
+  color: red;
+}
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <style>
+        .box {
+            width: 300px;  /* Width of the box */
+            height: 200px; /* Height of the box */
+            padding: 20px; /* Inner space inside the box */
+            margin: 30px;  /* Outer space around the box */
+            border: 2px solid black; /* Border of the box */
+            background-color: lightblue; /* Background color of the box */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box with padding, margin, width, and height applied.
+    </div>
+</body>
+</html>
+
+

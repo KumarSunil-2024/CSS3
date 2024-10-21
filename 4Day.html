@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative and Absolute Position Example</title>
+    <style>
+        /* Container to show relative positioning */
+        .relative-container {
+            position: relative; /* The container is positioned relative */
+            width: 400px;
+            height: 200px;
+            background-color: lightgray;
+            margin-bottom: 20px;
+        }
+
+        /* Child element with relative position */
+        .relative-box {
+            position: relative;
+            top: 20px; /* Moved 20px down from its original position */
+            left: 20px; /* Moved 20px right from its original position */
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* Child element with absolute position */
+        .absolute-box {
+            position: absolute;
+            top: 20px;  /* Positioned 20px from the top of the nearest positioned ancestor (relative-container) */
+            left: 20px; /* Positioned 20px from the left of the nearest positioned ancestor */
+            background-color: lightcoral;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Relative container -->
+    <div class="relative-container">
+        <div class="relative-box">
+            This box is relatively positioned.
+        </div>
+        <div class="absolute-box">
+            This box is absolutely positioned inside the container.
+        </div>
+    </div>
+
+</body>
+</html>
