@@ -48,6 +48,7 @@ p {
 
 -->
 
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,5 +72,161 @@ p {
     </div>
 </body>
 </html>
+
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Example</title>
+    <style>
+        /* Static Position (default) */
+        .static-box {
+            position: static;
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Relative Position */
+        .relative-box {
+            position: relative;
+            top: 20px;  /* Moves down by 20px from its original position */
+            left: 20px; /* Moves right by 20px from its original position */
+            background-color: lightgreen;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Absolute Position */
+        .absolute-box {
+            position: absolute;
+            top: 50px;   /* Positioned 50px from the top of the nearest positioned ancestor */
+            left: 50px;  /* Positioned 50px from the left of the nearest positioned ancestor */
+            background-color: lightcoral;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Fixed Position */
+        .fixed-box {
+            position: fixed;
+            top: 10px;   /* Stays 10px from the top of the viewport */
+            right: 10px; /* Stays 10px from the right of the viewport */
+            background-color: lightyellow;
+            padding: 10px;
+        }
+
+        /* Sticky Position */
+        .sticky-box {
+            position: sticky;
+            top: 0;  /* Sticks to the top of the viewport when you scroll */
+            background-color: lightpink;
+            padding: 10px;
+        }
+
+        /* Container to show the effect of absolute positioning */
+        .container {
+            position: relative;  /* Set relative so absolute positioning works inside this container */
+            height: 150px;
+            background-color: #f4f4f4;
+            margin-bottom: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Static Position (default) -->
+    <div class="static-box">
+        This box has static positioning (default).
+    </div>
+
+    <!-- Relative Position -->
+    <div class="relative-box">
+        This box has relative positioning.
+    </div>
+
+    <!-- Container for Absolute Position -->
+    <div class="container">
+        <div class="absolute-box">
+            This box has absolute positioning.
+        </div>
+    </div>
+
+    <!-- Fixed Position -->
+    <div class="fixed-box">
+        This box has fixed positioning. It stays in the same place when you scroll.
+    </div>
+
+    <!-- Sticky Position -->
+    <div class="sticky-box">
+        This box has sticky positioning. It sticks to the top when you scroll.
+    </div>
+
+    <p style="height: 800px;">Scroll down to see the sticky and fixed position effects.</p>
+
+</body>
+</html>
+
+-->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative and Absolute Position Example</title>
+    <style>
+        /* Container to show relative positioning */
+        .relative-container {
+            position: relative; /* The container is positioned relative */
+            width: 400px;
+            height: 200px;
+            background-color: lightgray;
+            margin-bottom: 20px;
+        }
+
+        /* Child element with relative position */
+        .relative-box {
+            position: relative;
+            top: 20px; /* Moved 20px down from its original position */
+            left: 20px; /* Moved 20px right from its original position */
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* Child element with absolute position */
+        .absolute-box {
+            position: absolute;
+            top: 20px;  /* Positioned 20px from the top of the nearest positioned ancestor (relative-container) */
+            left: 20px; /* Positioned 20px from the left of the nearest positioned ancestor */
+            background-color: lightcoral;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Relative container -->
+    <div class="relative-container">
+        <div class="relative-box">
+            This box is relatively positioned.
+        </div>
+        <div class="absolute-box">
+            This box is absolutely positioned inside the container.
+        </div>
+    </div>
+
+</body>
+</html>
+
+-->
+
 
 
