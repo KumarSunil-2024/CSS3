@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Concepts</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Sunil Kumar's Resume</h1>
+        <nav>
+            <a href="#education">Education</a> | 
+            <a href="#skills">Skills</a> | 
+            <a href="#experience">Experience</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Section: Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <p>B.Tech in Computer Science - XYZ University</p>
+        <ul>
+            <li>Graduated: 2024</li>
+            <li>GPA: 8.5</li>
+        </ul>
+    </section>
+
+    <!-- Section: Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ol>
+            <li>Core Java</li>
+            <li>HTML & CSS</li>
+            <li>SQL & Databases</li>
+        </ol>
+    </section>
+
+    <!-- Section: Experience -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <table border="1">
+            <tr>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>ABC Corp</td>
+                <td>Software Developer Intern</td>
+                <td>2023</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="/submit_form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Sunil Kumar</p>
+    </footer>
+
+</body>
+</html>
