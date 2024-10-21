@@ -1,0 +1,317 @@
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Concepts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* Static Position (default) */
+        .static {
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /* Relative Position */
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* Absolute Position */
+        .absolute {
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            background-color: coral;
+            padding: 10px;
+        }
+
+        /* Fixed Position */
+        .fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: lightcoral;
+            padding: 10px;
+            width: 100px;
+        }
+
+        /* Sticky Position */
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: lightyellow;
+            padding: 10px;
+        }
+
+        .container {
+            height: 600px;
+            margin: 20px;
+            background-color: lightgray;
+            overflow: auto;
+        }
+
+        .scrollable {
+            height: 200px;
+            background-color: lightpink;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Static Position (default) -->
+    <div class="static">
+        <h2>Static Position (Default)</h2>
+        <p>This is the default position for elements. They are placed according to the normal document flow.</p>
+    </div>
+
+    <!-- Relative Position -->
+    <div class="relative">
+        <h2>Relative Position</h2>
+        <p>This element is positioned relative to its normal position (moved 20px down and 20px to the right).</p>
+    </div>
+
+    <!-- Absolute Position -->
+    <div class="absolute">
+        <h2>Absolute Position</h2>
+        <p>This element is positioned absolutely with respect to the nearest positioned ancestor (or the viewport if none exists).</p>
+    </div>
+
+    <!-- Fixed Position -->
+    <div class="fixed">
+        <h2>Fixed Position</h2>
+        <p>This element is fixed relative to the viewport (always visible).</p>
+    </div>
+
+    <!-- Sticky Position -->
+    <div class="container">
+        <div class="sticky">
+            <h2>Sticky Position</h2>
+            <p>This element sticks to the top of the viewport when scrolling, but only within its container.</p>
+        </div>
+        
+        <!-- Scrollable content to demonstrate sticky position -->
+        <div class="scrollable">
+            <p>Scroll down to see how the sticky element behaves when you scroll.</p>
+        </div>
+        <div class="scrollable">
+            <p>More scrollable content...</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+-->
+
+
+<!--
+ <!-- Header -->
+ <header class="container">
+    <section>
+        Sunil IT
+    </section>
+    <section class="second">
+        <article>Courses</article>
+        <article>About Us</article>
+        <article>Logout</article>
+    </section>
+</header>
+
+<!-- Main Content -->
+<div class="content">
+    <h1>Welcome to Sunil IT</h1>
+    <div class="section">
+        <p>At Sunil IT, we are dedicated to providing top-notch education in the field of Information Technology. Our mission is to equip students with the necessary skills to excel in their careers.</p>
+    </div>
+
+    <div class="section">
+        <p>We offer various courses designed to cater to all levels of learners. From beginners to advanced professionals, Sunil IT is committed to helping you grow.</p>
+    </div>
+
+    <div class="section">
+        <p>Our team of instructors is made up of industry professionals who bring real-world experience into the classroom. You will learn the latest tools and technologies to stay ahead in the tech world.</p>
+    </div>
+
+    <div class="section">
+        <p>For more information, browse our course catalog, learn about our mission, and get in touch with us for any queries. Your success is our priority!</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; 2024 Sunil IT. All rights reserved.
+</footer>
+</body>
+</html>
+
+-->
+
+
+
+<!--
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sunil IT title bar</title>
+        <style>
+            .container {
+                display: flex;
+                justify-content: space-between;
+                background-color: #203040;
+                color: white;
+                height: 50px;
+                align-items: center;
+            }
+            .second {
+                display: flex;
+            }
+            article {
+                margin-right: 10px;
+            }
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .content {
+                padding: 20px;
+            }
+            .section {
+                margin-bottom: 20px;
+            }
+            footer {
+                background-color: #203040;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>  
+        -->
+
+
+<!--
+<!DOCTYPE>
+<html>
+    <head>
+         <title>Sunil IT title bar</title>
+         <style>
+            .container{
+                display: flex;
+                justify-content: space-between;
+                background-color:#203040;
+                color: white;
+                height: 50px;
+                align-items: center;
+            }
+            .second{
+                display: flex;
+            }
+            article{
+                margin-right: 10px;
+            }
+            body{
+                margin: 0px;
+            }
+         </style>
+    </head>
+    <body>
+      <header class="container">
+        <section>
+            Sunil IT
+        </section>
+
+        <section class="second">
+            <article>Courses</article>
+            <article>About US</article>
+            <article>Logout</article>
+        </section>
+      </header>
+    </body>
+</html>
+
+-->
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Flex Box</title>
+    <style>
+        .common{
+            height: 50px;
+            color: white;
+        }
+        .Item-1{
+            background-color: green;
+        }
+        .Item-2{
+            background-color: purple;
+        }
+        .Item-3{
+            background-color: yellow;
+        }
+        .Item-4{
+            background-color: blue;
+        }
+        .Item-5{
+            background-color: antiquewhite;
+        }
+        .Item-6{
+            background-color: chartreuse;
+        }
+        .Item-7{
+            background-color: brown;
+        }
+        .Item-8{
+            background-color: crimson;
+        }
+        .Item-9{
+            background-color: fuchsia;
+        }
+        .container{
+            border: 1px solid red;
+            padding:3px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: end;
+        }
+
+    </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="common Item-1">Item-1</div>
+        <div class="common Item-2">Item-2</div>
+        <div class="common Item-3">Item-3</div>
+        <div class="common Item-4">Item-4</div>
+        <div class="common Item-5">Item-5</div>
+        <div class="common Item-6">Item-6</div>
+        <div class="common Item-7">Item-7</div>
+        <div class="common Item-8">Item-8</div>
+        <div class="common Item-9">Item-9</div>
+      </div>
+    </body>
+</html>
+
+-->

@@ -41,3 +41,9 @@ Flex Box
 ***************
 
 Used to arrange the DOM Elements (div,h1,table,p....) either X-axis Or Y-axis
+
+
+display:"flex"
+flex-wrap:"nowrap" / "wrap / "wrpa-reverse"
+flex-direction:"row" /"row-reverse" / "column" / "column-reverse"
+justify-content:"flex-start" /"center"/ "flex-end" /"space-between" /"space-around" /"space-evenly"
