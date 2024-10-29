@@ -1,36 +1,122 @@
+<!--
+//CSS Animation with Transform on Hover
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-        .c_1{
-            font-size: 1rem;
-        }
-        .c_2{
-            font-size: 1em;
-        }
-        .c_3{
-            font-size: 2rem;
-        }
-        .c_4{
-            font-size: 2em;
-        }
-        .parent{
-            font-size: 30px;
-        }
-    </style>
- </head>
-  <body>
-    <div class="c_1">1rem</div>
-    <div class="c_2">1em</div>
-    <div class="c_3">2rem</div>
-    <div class="c_4">2em</div>
-
-    <hr>
-    <div class="parent">
-      <div class="c_1">1rem</div>
-      <div class="c_2">1em</div>
-      <div class="c_3">2rem</div>
-      <div class="c_4">2em</div>
-    </div>
-  </body>
+    <head>
+        <style>
+            .parent {
+                width: 800px;
+                height: 400px;
+                background-color: red;
+            }
+            .child {
+                width: 50%;
+                height: 50%;
+                background-color: goldenrod;
+                transition: transform 1s linear;
+            }
+            .parent:hover .child {
+                background-color: yellow;
+                transform: translateX(100%);
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </body>
 </html>
+
+// CSS Animation with Keyframes
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation-name: ashokit;
+                animation-duration: 4s;
+                animation-delay: 2s;
+                animation-iteration-count: 3;
+                animation-direction: alternate-reverse;
+            }
+            @keyframes ashokit {
+                0% {
+                    background-color: rosybrown;
+                    top: 0px;
+                    left: 0px;
+                }
+                33% {
+                    background-color: seagreen;
+                    left: 200px;
+                    top: 0px;
+                }
+                66% {
+                    background-color: skyblue;
+                    top: 200px;
+                    left: 200px;
+                }
+                100% {
+                    background-color: springgreen;
+                    left: 0px;
+                    top: 200px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
+
+// CSS Animation with Different Keyframes
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+                position: relative;
+                animation-name: ashokit;
+                animation-duration: 4s;
+            }
+            @keyframes ashokit {
+                0% {
+                    background-color: turquoise;
+                    left: 0px;
+                    top: 0px;
+                }
+                25% {
+                    background-color: wheat;
+                    left: 200px;
+                    top: 200px;
+                }
+                50% {
+                    background-color: yellowgreen;
+                    left: 0px;
+                    top: 200px;
+                }
+                100% {
+                    background-color: blueviolet;
+                    left: 200px;
+                    top: 0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
+
+
+
+
+-->
