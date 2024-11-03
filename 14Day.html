@@ -1,0 +1,272 @@
+<!--Grid Box with Images
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        img {
+            width: 200px;
+            border: 1px solid red;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1em;
+            justify-items: center;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="parent">
+            <img src="image/tour.jpg">
+            <img src="image/laptop.jpg">
+            <img src="image/mobile.jpg">
+            <img src="image/t-shirt.jpg">
+            <img src="image/tour.jpg">
+            <img src="image/t-shirt.jpg">
+        </div>
+    </body>
+</html>
+
+-->
+
+<!--CSS Grid Box with Paragraphs
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .parent > p:nth-child(odd) {
+        background-color: #ddd;
+      }
+      p {
+        border: 1px solid red;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(100px, auto);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia odit,
+        facilis cupiditate dolorem ratione laborum illo nesciunt commodi
+        asperiores veritatis! Sed perferendis asperiores libero commodi voluptas
+        ut ipsam facilis delectus!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos libero
+        nihil numquam minima expedita amet neque hic labore impedit eius iure,
+        possimus accusantium, temporibus repudiandae asperiores. Fuga odit
+        placeat possimus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos libero
+        nihil numquam minima expedita amet neque hic labore impedit eius iure,
+        possimus accusantium, temporibus repudiandae asperiores. Fuga odit
+        placeat possimus?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos libero
+        nihil numquam minima expedita amet neque hic labore impedit eius iure,
+        possimus accusantium, temporibus repudiandae asperiores. Fuga odit
+        placeat possimus?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum explicabo,
+        officia quia sequi animi doloribus eos minus architecto sit nihil nobis
+        molestiae autem vel atque repellat. Enim ipsum dolorem iste?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum possimus
+        aliquam natus reprehenderit rem quidem, architecto cumque qui, tempore
+        earum repellendus maxime est quam ipsum quos cum, voluptatum sequi illo?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eos illo
+        provident nulla voluptas. Excepturi quidem alias odit nihil repellendus,
+        rem dicta dolorem at eos omnis unde rerum exercitationem sit.
+      </p>
+    </div>
+  </body>
+</html>
+-->
+
+<!--CSS Grid with Image Hover Effect
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .parent > div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid gray;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+        justify-items: center;
+      }
+      img {
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid red;
+        cursor: pointer;
+      }
+      img:hover {
+        width: 75px;
+      }
+      .parent > div:nth-child(5) {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>
+        <img src="image/tour.jpg" />
+        <img src="image/t-shirt.jpg" />
+        <img src="image/laptop.jpg" />
+        <img src="image/mobile.jpg" />
+        <img src="image/t-shirt.jpg" />
+        <img src="image/laptop.jpg" />
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
+
+-->
+
+<!--CSS Grid with Alignments
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Grid</title>
+    <style>
+        .parent {
+            height: 100vh;
+        }
+        .parent > p {
+            border: 1px solid gray;
+            width: 100px;
+            height: 50px;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 1em;
+            justify-items: end;
+            align-items: end;
+        }
+      /* Individual child alignment overrides */
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <p>P1</p>
+      <p>P2</p>
+      <p>P3</p>
+      <p>P4</p>
+      <p>P5</p>
+      <p>P6</p>
+      <p>P7</p>
+      <p>P8</p>
+      <p>P9</p>
+    </div>
+  </body>
+</html>
+
+-->
+
+<!--CSS Grid with Column Spanning
+
+<!DOCTYPE html>
+<head>
+  <head>
+    <style>
+        .box {
+            background-color: gray;
+            border: 1px solid red;
+            height: 100px;
+            color: white;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 1em;
+        }
+        .box1, .box4 {
+            grid-column: 1/3;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box box1">Div1</div>
+      <div class="box box2">Div2</div>
+      <div class="box box3">Div3</div>
+      <div class="box box4">Div4</div>
+    </div>
+  </body>
+</head>
+
+-->
+
+<!--CSS Grid Layout with Header, Footer, Left, and Right Sections
+
+<!DOCTYPE html>
+<head>
+  <head>
+    <style>
+      .parent {
+        height: 100vh;
+      }
+      .parent > div {
+        background-color: gray;
+        margin: 5px;
+        color: white;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+      }
+      .header {
+        grid-column: 2/3;
+      }
+      .footer {
+        grid-column: 2/3;
+      }
+      .left {
+        grid-column: 3/4;
+        grid-row: 1/4;
+      }
+      .right {
+        grid-column: 3/4;
+        grid-row: 1/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="header">Header</div>
+      <div class="left">Left Menu</div>
+      <div class="body">Body</div>
+      <div class="right">Right Menu</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</head>
+
+-->
