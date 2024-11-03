@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1em;
+            justify-items: center;
+        }
+       img{
+        width: 200px;
+        transition: 0.3s ease;
+       }
+       .grayscale img{
+        filter: grayscale(100%);
+       }
+       .blur img{
+        filter: blur(4px);
+       }
+       .brightness img{
+        filter: brightness(0.8);
+       }
+       img:hover{
+        filter: sepia(60%) contrast(120%) saturate(1.5);
+       }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="grayscale">
+        <img src="tour.jpg" alt="Image 1" />
+      </div>
+      <div class="blur">
+        <img src="tour.jpg" alt="Image 2" />
+      </div>
+      <div class="brightness">
+        <img src="tour.jpg" alt="Image 3" />
+      </div>
+    </div>
+  </body>
+</html>
